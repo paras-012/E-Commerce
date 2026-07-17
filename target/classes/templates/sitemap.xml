@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset>
+    <url>
+        <loc>https://www.signalhawk.in/</loc>
+        <lastmod>2026-07-17</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <!-- Company Overview -->
+    <url>
+        <loc>https://www.signalhawk.in/#overview</loc>
+        <lastmod>2026-07-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- Services -->
+    <url>
+        <loc>https://www.signalhawk.in/#services</loc>
+        <lastmod>2026-07-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <!-- Enquiry Page -->
+    <url>
+        <loc>https://www.signalhawk.in/#enquiry</loc>
+        <lastmod>2026-07-17</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+</urlset>

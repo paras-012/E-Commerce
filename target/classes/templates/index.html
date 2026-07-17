@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 🚀 HIGHLY OPTIMIZED SEO METADATAS -->
+    <title>Signal Hawk Electronics (P.) Ltd. | Excels in Instrumentation & Services</title>
+    <meta name="description" content="Signal Hawk has been one of India's Leading Supplier of Test & Measurement Instruments worldwide since 2009. An ISO-9001:2008 Certified Company.">
+    <meta name="keywords" content="Electromagnetic Radiation Meter, DETEX 189, Electric and Magnetic Field Measuring Instrument, NBM 550, SRM 3006, Signal Hawk Electronics, Transducers, Power Meters">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"rel="preload"></script>
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- 🎨 INFINITE RUNNING MARQUEE CSS -->
+    <style>
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee-loop {
+            display: flex;
+            width: max-content;
+            animation: marquee 35s linear infinite;
+        }
+        .animate-marquee-loop:hover {
+            animation-play-state: paused;
+        }
+    </style>
+</head>
+<body class="bg-[#f0f2f5] text-gray-800 font-sans text-xs pt-[210px] sm:pt-[190px] md:pt-[155px]">
+
+<!-- ================= FULL STICKY HEADER WRAPPER ASSEMBLY ================= -->
+<div class="fixed top-0 left-0 w-full z-50 shadow-md bg-white">
+    <!-- 1. TOP UTILITY HEADER (Dark Slate Bar) -->
+    <div class="w-full bg-[#1c2833] text-white py-1.5 px-6 text-[11px] flex justify-between items-center border-b border-gray-700">
+        <div class="flex items-center space-x-4">
+            <span id="liveClock" class="font-mono">Loading time...</span>
+            <span>📍 New Delhi, India ▾</span>
+        </div>
+        <div class="flex space-x-4">
+            <span>📞 011-401113924 <span class="text-teal-400 text-[10px]">(Lines Open)</span></span>
+            <span>📞 (+91) 9650933334</span>
+            <span>📞 (+91) 9910448693</span>
+            <span>✉️ sales@signalhawk.in</span>
+        </div>
+    </div>
+
+    <!-- 2. MAIN LOGO BRANDING AREA -->
+    <header class="w-full bg-white py-2 px-6 flex justify-between items-center border-b border-gray-200">
+        <div class="flex items-center space-x-4">
+            <img loading="lazy" src="https://www.signalhawk.in/images/logo.png" alt="Signal Hawk Logo" class="h-12 w-auto object-contain" >
+            <div>
+                <h1 class="text-xl md:text-2xl font-bold text-slate-800 tracking-tight">SIGNAL HAWK ELECTRONICS (P.) Ltd.</h1>
+                <p class="text-blue-700 italic font-bold text-xs leading-none">Excels in Instrumentation & Services</p>
+                <p class="text-gray-600 text-[9px] font-medium mt-0.5">AN ISO-9001:2008 Certified Company</p>
+            </div>
+        </div>
+        <div class="text-[10px] text-right space-y-0.5 text-gray-700 hidden lg:block">
+            <div>📞 011-401113924 &nbsp;|&nbsp; 📠 011-401113924</div>
+            <div>📧 E-Mail Id: <span class="text-blue-600 underline">sales@signalhawk.in</span></div>
+        </div>
+    </header>
+
+    <!-- 3. CLASSIC TEAL MENU BAR -->
+    <nav class="w-full bg-[#00a896] text-white flex flex-wrap items-center justify-between shadow-sm px-2">
+        <div class="flex flex-wrap items-center divide-x divide-teal-600 font-semibold text-[11px]">
+
+            <a href="#" onclick="showPage('home')" class="px-4 py-3.5 bg-[#028074] hover:bg-[#028074] whitespace-nowrap">Home</a>
+
+            <!-- ABOUT US Dropdown Menu -->
+            <div class="relative group">
+                <button class="px-4 py-3.5 hover:bg-[#028074] focus:outline-none whitespace-nowrap flex items-center uppercase">
+                    ABOUT US <i class="fa-solid fa-caret-down ml-1 text-[9px]"></i>
+                </button>
+                <div class="absolute left-0 top-full hidden group-hover:block w-48 bg-[#fffdec] text-[#005a70] border border-gray-400 shadow-xl z-50 divide-y divide-gray-300">
+                    <a href="#" onclick="showPage('overview')" class="block px-4 py-2 hover:bg-[#028074] hover:text-white transition-colors">Company Overview</a>
+                    <a href="#" onclick="showPage('market')" class="block px-4 py-2 hover:bg-[#028074] hover:text-white transition-colors">Market Segment</a>
+                    <a href="#" onclick="showPage('structure')" class="block px-4 py-2 hover:bg-[#028074] hover:text-white transition-colors">Organizational Structure</a>
+                </div>
+            </div>
+
+            <a href="#" onclick="showPage('services')" class="px-4 py-3.5 hover:bg-[#028074] whitespace-nowrap">Services</a>
+
+            <!-- PRODUCT Dropdown Menu -->
+            <div class="relative group">
+                <button class="px-4 py-3.5 hover:bg-[#028074] focus:outline-none whitespace-nowrap flex items-center uppercase">
+                    PRODUCT <i class="fa-solid fa-caret-down ml-1 text-[9px]"></i>
+                </button>
+                <div class="absolute left-0 top-full hidden group-hover:block w-56 bg-[#fffdec] text-[#005a70] border border-gray-400 shadow-xl z-50 divide-y divide-gray-300">
+                    <a href="#" class="block px-4 py-2 hover:bg-[#028074] hover:text-white transition-colors">Electronics & Electrical Measuring Instruments</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-[#028074] hover:text-white transition-colors">Optical Products</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-[#028074] hover:text-white transition-colors">RF products</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-[#028074] hover:text-white transition-colors">Others</a>
+                </div>
+            </div>
+
+            <a href="#" class="px-4 py-3.5 hover:bg-[#028074] whitespace-nowrap">Gallery</a>
+            <a href="#" onclick="showPage('enquiry')" class="px-4 py-3.5 hover:bg-[#028074] whitespace-nowrap">Enquiry</a>
+            <a href="#" class="px-4 py-3.5 hover:bg-[#028074] whitespace-nowrap">Contact Us</a>
+            <a href="#" onclick="showPage('career')" class="px-4 py-3.5 hover:bg-[#028074]">CAREER</a>
+            <a href="login" class="px-4 py-3.5 bg-[#028074] ml-auto">MEMBER LOGIN</a>
+
+        </div>
+
+        <div class="p-1 flex items-center space-x-1 max-w-xs ml-auto">
+            <input type="text" placeholder="Search" class="px-2 py-1 text-slate-800 text-xs w-36 focus:outline-none rounded-sm border border-teal-600">
+            <button class="bg-[#028074] px-3 py-1 text-xs font-bold rounded-sm hover:bg-teal-900">Go</button>
+        </div>
+    </nav>
+</div>
+
+<!-- 4. THREE-COLUMN MAIN LAYOUT CONTAINER -->
+<div class="w-full mx-auto grid grid-cols-12 gap-3 mt-4 px-6 items-stretch">
+
+    <!-- LEFT COLUMN: HOT PRODUCTS -->
+    <aside class="col-span-12 md:col-span-3 bg-white border border-gray-300 rounded p-4 shadow-sm flex flex-col justify-between">
+        <div>
+            <h2 class="text-xs font-bold bg-[#028074] text-white p-2 mb-3 uppercase tracking-wide">
+                <i class="fa-solid fa-fire text-amber-400 mr-1"></i> Hot Products
+            </h2>
+            <div class="space-y-4 divide-y divide-gray-100">
+                <div class="pt-2 first:pt-0 flex items-start gap-2.5">
+                    <img loading="lazy" src="images/image1.jpg" class="w-12 h-16 object-contain border p-0.5 rounded bg-white">
+                    <div class="space-y-0.5">
+                        <h3 class="font-bold text-[#c0392b] text-[10px] uppercase">Radiation EMF Detector KM 192</h3>
+                        <p class="text-gray-600 text-[9px] line-clamp-2">High Electromagnetic waves are generated by electric appliances...</p>
+                        <a href="#" class="text-blue-700 underline text-[9px]">read more...</a>
+                    </div>
+                </div>
+                <div class="pt-3 flex items-start gap-2.5">
+                    <img loading="lazy" src="https://www.signalhawk.in/images/km195.jpg" class="w-12 h-16 object-contain border p-0.5 rounded bg-white" >
+                    <div class="space-y-0.5">
+                        <h3 class="font-bold text-[#c0392b] text-[10px] uppercase">Radiation EMF Detector KM 195</h3>
+                        <p class="text-gray-600 text-[9px] line-clamp-2">This meter is used to indicate electromagnetic pollution generated artificially...</p>
+                        <a href="#" class="text-blue-700 underline text-[9px]">read more...</a>
+                    </div>
+                </div>
+                <div class="pt-3 flex items-start gap-2.5">
+                    <img loading="lazy" src="https://www.signalhawk.in/images/at6130.jpg" class="w-12 h-16 object-contain border p-0.5 rounded bg-white" >
+                    <div class="space-y-0.5">
+                        <h3 class="font-bold text-[#c0392b] text-[10px] uppercase">Radition Meter Beta Gamma AT6130</h3>
+                        <p class="text-gray-600 text-[9px] line-clamp-2">Hand-held small-sized instruments to measure ambient x-ray...</p>
+                        <a href="#" class="text-blue-700 underline text-[9px]">read more...</a>
+                    </div>
+                </div>
+                <div class="pt-3 flex items-start gap-2.5">
+                    <img loading="lazy" src="https://www.signalhawk.in/images/at6130c.jpg" class="w-12 h-16 object-contain border p-0.5 rounded bg-white" >
+                    <div class="space-y-0.5">
+                        <h3 class="font-bold text-[#c0392b] text-[10px] uppercase">Radiation Meter AT6130C</h3>
+                        <p class="text-gray-600 text-[9px] line-clamp-2">Radiation Protective Measure in case of nuclear disasters...</p>
+                        <a href="#" class="text-blue-700 underline text-[9px]">read more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- CENTER COLUMN (MASTER CONTAINER INJECTION FIXED) -->
+    <main class="col-span-12 md:col-span-6 flex flex-col justify-between h-full space-y-3">
+
+        <!-- ====== [PAGE 1]: HOME VIEW WITH COMPANY PROFILE ====== -->
+        <div id="homeView" style="display: block;" class="space-y-3 flex-grow flex flex-col">
+            <!-- Top Carousel Header Slider -->
+            <div class="relative bg-gradient-to-br from-[#101f3d] via-[#1a2e5c] to-[#0c162b] border border-slate-700 text-white rounded overflow-hidden h-[260px] shadow-md shrink-0">
+                <!-- Slide 1: DETEX 189 -->
+                <div class="slide-element absolute inset-0 p-6 flex justify-between items-center transition-opacity duration-700 opacity-100">
+                    <div class="space-y-3 max-w-[65%] z-10">
+                        <div class="inline-flex items-center gap-1 bg-teal-500/20 text-teal-300 font-bold px-2 py-0.5 rounded-full text-[9px] border border-teal-500/30 uppercase tracking-wider">
+                            <span class="w-1.5 h-1.5 bg-teal-400 rounded-full animate-pulse"></span> ISO 9001 Approved Tech
+                        </div>
+                        <h3 class="text-base font-black text-white tracking-tight leading-tight">Electromagnetic Radiation Meter <span class="text-teal-300 block text-lg font-black mt-0.5">DETEX 189</span></h3>
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-[10px] text-gray-300 font-medium py-1">
+                            <div><i class="fa-solid fa-square-poll-vertical text-teal-400 mr-1.5"></i>ACV / DCV Testing</div>
+                            <div><i class="fa-solid fa-wave-square text-teal-400 mr-1.5"></i>800MHz to 4GHz</div>
+                            <div><i class="fa-solid fa-gauge-high text-teal-400 mr-1.5"></i>ACA / DCA Range</div>
+                            <div><i class="fa-solid fa-temperature-half text-teal-400 mr-1.5"></i>Temp: 12-124°F</div>
+                        </div>
+                        <button class="bg-gradient-to-r from-teal-500 to-[#028074] text-white font-extrabold px-5 py-2 rounded text-[10px] uppercase tracking-wider shadow-md">Learn More</button>
+                    </div>
+                    <div class="w-32 h-44 bg-white/10 backdrop-blur-sm rounded-lg p-2 border border-white/10 shadow-xl flex items-center justify-center overflow-hidden shrink-0">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=200&q=80" class="max-w-full max-h-full object-cover rounded shadow">
+                    </div>
+                </div>
+                <!-- Slide 2: NBM 550 -->
+                <div class="slide-element absolute inset-0 p-6 flex justify-between items-center transition-opacity duration-700 opacity-0 pointer-events-none">
+                    <div class="space-y-3 max-w-[65%] z-10">
+                        <div class="inline-flex items-center gap-1 bg-amber-500/20 text-amber-300 font-bold px-2 py-0.5 rounded-full text-[9px] border border-amber-500/30 uppercase tracking-wider">
+                            <span class="w-1.5 h-1.5 bg-amber-400 rounded-full animate-pulse"></span> High Precision Field Unit
+                        </div>
+                        <h3 class="text-base font-black text-white tracking-tight leading-tight">Electric Field Measuring Device <span class="text-amber-300 block text-lg font-black mt-0.5">NBM 550 Series</span></h3>
+                        <div class="grid grid-cols-2 gap-x-4 gap-y-1.5 text-[10px] text-gray-300 font-medium py-1">
+                            <div><i class="fa-solid fa-circle-nodes text-amber-400 mr-1.5"></i>Isotropic Probes</div>
+                            <div><i class="fa-solid fa-display text-amber-400 mr-1.5"></i>45 mm Display Range</div>
+                            <div><i class="fa-solid fa-chart-area text-amber-400 mr-1.5"></i>Data Logger Internal</div>
+                            <div><i class="fa-solid fa-shield-virus text-amber-400 mr-1.5"></i>Non-Ionizing Safety</div>
+                        </div>
+                        <button class="bg-gradient-to-r from-amber-500 to-amber-600 text-white font-extrabold px-5 py-2 rounded text-[10px] uppercase tracking-wider shadow-md">Explore Tech</button>
+                    </div>
+                    <div class="w-32 h-44 bg-white/10 backdrop-blur-sm rounded-lg p-2 border border-white/10 shadow-xl flex items-center justify-center overflow-hidden shrink-0">
+                        <img loading="lazy" src="https://images.unsplash.com/photo-1581092335397-9583fe92d232?auto=format&fit=crop&w=200&q=80" class="max-w-full max-h-full object-cover rounded shadow">
+                    </div>
+                </div>
+                <button onclick="manualMoveSlide(-1)" class="absolute left-3 top-1/2 -translate-y-1/2 bg-black/40 text-white w-7 h-7 flex items-center justify-center rounded-full text-xs font-bold transition-all z-30">❮</button>
+                <button onclick="manualMoveSlide(1)" class="absolute right-3 top-1/2 -translate-y-1/2 bg-black/40 text-white w-7 h-7 flex items-center justify-center rounded-full text-xs font-bold transition-all z-30">❯</button>
+            </div>
+
+            <!-- Company Profile Inner Block Card Data -->
+            <div class="bg-white border border-gray-300 rounded p-5 shadow-sm flex-grow">
+                <div class="flex space-x-1 border-b border-gray-300 mb-4">
+                    <button class="bg-[#028074] text-white font-bold px-5 py-2 text-xs rounded-t">Company Profile</button>
+                    <button class="bg-gray-100 text-gray-700 font-bold px-5 py-2 text-xs rounded-t hover:bg-gray-200">Quality Policy</button>
+                </div>
+                <h2 class="text-sm font-bold text-slate-900 mb-3 border-l-4 border-[#028074] pl-2">Welcome to Signal Hawk</h2>
+                <div class="text-gray-700 leading-relaxed text-[11px] space-y-3 text-justify">
+                    <p>We are <strong>M/s SIGNAL HAWK Electronics Pvt. Ltd</strong> is an Indian based a leading test and measurement solution provider since 2009. Signal Hawk Electronics Pvt. Ltd. Which is well established organization since last 3 years (Management having experience of more than 20 years) of strong sales and marketing experience. Headquartered in New Delhi, we offers wide variety of RF & Microwave communication test & measurement equipment and solutions to our valued customers.</p>
+                    <p>We specialize in marketing state of the art instruments across various domains. Our esteemed customers includes worldwide prestigious technology companies and many Universities / Engineering Institutes / IITs in Asia, eagerly choose these products as their lab equipments in their application. We have complete solutions to set the laboratory in educational institutes and Telecom Sector private industries as well as Govt. Organizations. We genuinely anticipate the needs of the end user and give them a best solution up to the satisfaction with competitive price performance ratio. Signal hawk is providing total solutions and satisfaction to our customers.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== [PAGE 2]: COMPANY OVERVIEW ====== -->
+        <div id="overviewView" style="display: none;" class="space-y-4 bg-white border border-gray-300 rounded p-5 shadow-sm flex-grow">
+            <div class="text-center text-sm font-bold text-slate-900 border-b pb-2 uppercase bg-slate-50 py-1">Company Overview</div>
+            <div class="bg-gradient-to-r from-sky-100 via-slate-100 to-blue-200 border p-6 rounded flex items-center justify-between min-h-[140px] shadow-inner">
+                <div class="space-y-2">
+                    <h2 class="text-sm font-black text-slate-800 uppercase">SIGNAL HAWK ELECTRONICS -</h2>
+                    <h3 class="text-base font-black text-blue-900 uppercase">Driving Innovation In Test & Measurement</h3>
+                </div>
+                <div class="text-sky-500 text-5xl"><i class="fa-solid fa-chart-line"></i></div>
+            </div>
+            <div class="text-gray-700 space-y-3 leading-relaxed text-justify text-[11px] pt-2">
+                <p>We are M/s <strong>SIGNAL HAWK Electronics Pvt. Ltd</strong> is an Indian based a leading test and measurement solution provider With over 20 years of management experience. Is well established organization since last 3 years (Management having experience of more 20 year communication test & measurement and solutions to our valued customers.</p>
+                <p>We specialize in marketing state of the art instruments across various domains. Our esteemed customers includes worldwide prestigious technology companies and many Universitey / Engineering institutes / IITs in Asia, eagerly choose these products as their lab industries as well as Govt. application.</p>
+            </div>
+            <div class="space-y-2 pt-2">
+                <h3 class="font-bold text-xs text-slate-900">Our Objectives:</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3">
+                    <div class="flex items-center p-3 border border-gray-200 rounded bg-white shadow-sm"><i class="fa-solid fa-earth-americas text-sky-600 text-2xl mr-3 w-8 text-center"></i><div><p class="font-bold text-slate-800 text-[11px]">Technology</p><p class="text-gray-500 text-[9px]">Deliver Leading Edge Technologies.</p></div></div>
+                    <div class="flex items-center p-3 border border-gray-200 rounded bg-white shadow-sm"><i class="fa-regular fa-lightbulb text-amber-500 text-2xl mr-3 w-8 text-center"></i><div><p class="font-bold text-slate-800 text-[11px]">Business</p><p class="text-gray-500 text-[9px]">To be the preferred pathway for technology.</p></div></div>
+                    <div class="flex items-center p-3 border border-gray-200 rounded bg-white shadow-sm"><i class="fa-solid fa-users text-slate-700 text-xl mr-3 w-8 text-center"></i><div><p class="font-bold text-slate-800 text-[11px]">Human</p><p class="text-gray-500 text-[9px]">Nurture individual growth, empowerment, and teamwork.</p></div></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== [PAGE 3]: MARKET SEGMENT ====== -->
+        <div id="marketView" style="display: none;" class="space-y-4 bg-white border border-gray-300 rounded p-5 shadow-sm flex-grow">
+            <div class="flex items-center justify-between border-b pb-3 bg-slate-50 p-2">
+                <span class="bg-green-100 text-green-700 font-bold px-2 py-0.5 rounded-full text-[10px]">Real-time status</span>
+                <h2 class="text-md font-black text-slate-900 uppercase">Market Segment</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                <div class="border p-3 bg-white rounded-lg shadow-sm"><i class="fa-solid fa-atom text-blue-700 text-xl mb-1"></i><h4 class="font-bold text-slate-900 text-xs">Atomic Energy</h4><p class="text-[9px] text-gray-400">• Atomic Energy Applications</p></div>
+                <div class="border p-3 rounded-lg bg-white shadow-sm"><i class="fa-solid fa-car text-slate-700 text-xl mb-1"></i><h4 class="font-bold text-slate-900 text-xs">Automobiles</h4><p class="text-[9px] text-gray-400">EV Sector Trend: Bullish</p></div>
+                <div class="border p-3 rounded-lg bg-white shadow-sm"><i class="fa-solid fa-rocket text-indigo-600 text-xl mb-1"></i><h4 class="font-bold text-slate-900 text-xs">Aerospace</h4><p class="text-[9px] text-gray-400">• Defense-related Systems</p></div>
+                <div class="border p-3 rounded-lg bg-white shadow-sm"><i class="fa-solid fa-satellite-dish text-blue-600 text-xl mb-1"></i><h4 class="font-bold text-slate-900 text-xs">Telecommunication</h4><p class="text-[9px] text-gray-400">5G Rollout Infrastructure</p></div>
+            </div>
+        </div>
+
+        <!-- ====== [PAGE 4]: ORGANIZATIONAL STRUCTURE ====== -->
+        <div id="structureView" style="display: none;" class="space-y-4 bg-white border border-gray-300 rounded p-5 shadow-sm flex-grow">
+            <div class="text-center text-sm font-bold text-slate-900 border-b pb-2 uppercase bg-slate-50 py-1">Organizational Structure</div>
+            <p class="text-[11px] text-gray-700 pt-2"><strong>Signal Hawk</strong> has a flat responsive matrix structure. The organization has been structured to ensure:</p>
+            <ul class="list-disc list-inside space-y-1 text-gray-600 text-[11px] pl-1">
+                <li>Proximity to customers through conscientious focus and better post sales service.</li>
+                <li>Clear accountability, minimising overlap of responsibilities.</li>
+                <li>Enriched job responsibilities and freedom for decision making.</li>
+            </ul>
+            <div class="flex flex-col items-center space-y-4 pt-6 text-center text-[10px] font-bold">
+                <div class="bg-gradient-to-r from-teal-50 to-emerald-50 text-emerald-800 border-2 border-emerald-300 rounded-full p-2 px-8 text-xs">MD / CEO</div>
+                <div class="grid grid-cols-3 gap-2 w-full">
+                    <div class="bg-slate-50 border border-gray-300 rounded p-1.5 shadow-sm"><span class="text-orange-700 font-extrabold block">GM (SALES)</span><p class="text-[9px] font-normal text-gray-500">Manager Sales</p></div>
+                    <div class="bg-slate-50 border border-gray-300 rounded p-1.5 shadow-sm"><span class="text-teal-700 font-extrabold block">GM (TECH)</span><p class="text-[9px] font-normal text-gray-500">Manager Tech.</p></div>
+                    <div class="bg-slate-50 border border-gray-300 rounded p-1.5 shadow-sm"><span class="text-blue-600 font-extrabold block">GM (IT)</span><p class="text-[9px] font-normal text-gray-500">IT Engineer</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ====== [PAGE 5]: SERVICES ====== -->
+        <div id="servicesView" style="display: none;" class="space-y-4 bg-white border border-gray-300 rounded p-5 shadow-sm flex-grow">
+            <div class="text-center text-sm font-bold text-slate-900 border-b pb-2 uppercase bg-slate-50 py-1">Services</div>
+            <h3 class="text-xs font-black text-[#007a87] uppercase tracking-wide pt-2">Test & Measuring Instrument Training</h3>
+            <div class="w-full h-40 rounded-lg overflow-hidden border shadow-sm my-2">
+                <img  loading="lazy" src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=700&q=80" class="w-full h-full object-cover"/>
+            </div>
+            <p class="text-gray-700 leading-relaxed text-[11px] text-justify">SIGNAL HAWK (School of Technologies and Educational Programs, India) is the training and development arm of SIGNAL HAWK ELECTRONICS PVT LTD. Its a pioneer in the domain of Technical and Soft Skill training. It is committed to bridging the gap between demand and supply of knowledge workers.</p>
+            <div class="text-xs font-bold text-slate-800 pt-1">Contact For training: <span class="text-blue-600 underline">training@signalhawk.in</span></div>
+        </div>
+
+        <!-- ====== [PAGE 6]: ENQUIRY FORM VIEW ====== -->
+        <div id="enquiryView" style="display: none;" class="bg-white border border-gray-300 rounded p-6 shadow-sm flex-grow flex flex-col justify-between">
+            <div>
+                <div class="text-center text-xs font-black text-slate-800 tracking-wider bg-slate-50 py-2.5 rounded border border-gray-200 mb-6 uppercase">
+                    <i class="fa-solid fa-envelope-open-text text-teal-600 mr-1.5"></i> Send Your Enquiry
+                </div>
+                <form class="space-y-5 pt-1 text-xs">
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <label class="sm:w-24 font-bold text-slate-700 sm:text-right">Name:</label>
+                        <input type="text" placeholder="Enter full name" class="flex-grow border border-gray-300 rounded p-2.5 focus:outline-none shadow-inner">
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-center gap-4">
+                        <label class="sm:w-24 font-bold text-slate-700 sm:text-right">Email:</label>
+                        <input type="email" placeholder="Enter email address" class="flex-grow border border-gray-300 rounded p-2.5 focus:outline-none shadow-inner">
+                    </div>
+                    <div class="flex flex-col sm:flex-row sm:items-start gap-4">
+                        <label class="sm:w-24 font-bold text-slate-700 sm:text-right pt-2">Query:</label>
+                        <textarea rows="5" placeholder="Describe requirement details..." class="flex-grow border border-gray-300 rounded p-2.5 focus:outline-none resize-none shadow-inner"></textarea>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <div class="sm:w-24"></div>
+                        <button type="submit" class="bg-[#007a87] text-white font-extrabold p-2.5 px-10 rounded uppercase shadow hover:bg-teal-900 transition-all">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- RIGHT COLUMN: NEW PRODUCTS SLIDER -->
+    <aside class="col-span-12 md:col-span-3 bg-white border border-gray-300 rounded p-4 shadow-sm flex flex-col justify-between">
+        <div>
+            <h2 class="text-xs font-bold bg-[#028074] text-white p-2 mb-3 uppercase tracking-wide">
+                <i class="fa-solid fa-box-open mr-1"></i> New Products
+            </h2>
+
+            <div id="dbProductsSlider" class="relative min-h-[340px] flex flex-col space-y-3">
+                <div th:each="product, iterStat : ${products}"
+                     th:id="'dbProductSlide-' + ${iterStat.index}"
+                     class="db-product-slide w-full transition-all duration-700 flex flex-col items-center text-center space-y-2 border border-gray-200 p-3 bg-slate-50 rounded shadow-sm">
+
+                    <div class="w-24 h-24 bg-white border flex items-center justify-center p-2 rounded shadow-sm">
+                        <img th:src="${product.imageUrl}" th:alt="${product.name}" class="max-w-full max-h-full object-contain"/>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-red-950 text-[11px] leading-tight" th:text="${product.name}">Product Title</h3>
+                        <p class="text-gray-500 text-[9px] mt-1 line-clamp-2" th:text="${product.description}">Description...</p>
+                        <div class="text-xs font-black text-slate-900 mt-1" th:text="${product.price}">₹0.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<!-- 🌐 5. GLOBAL CATEGORIES DIRECTORY SECTION -->
+<div class="w-full px-6 mt-4">
+    <div class="bg-white border border-gray-300 rounded p-6 shadow-md">
+        <h2 class="text-center text-xl font-bold text-slate-900 mb-6 tracking-wide">Global Categories Directory</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-[11px]">
+            <div class="space-y-3">
+                <h3 class="text-sm font-bold text-slate-800 border-b pb-1 mb-2">Instrumentation</h3>
+                <div class="flex items-center p-2.5 bg-gray-50 border border-gray-300 rounded shadow-sm"><i class="fa-solid fa-bezier-curve text-gray-600 mr-3 text-sm w-5 text-center"></i> <span>Transducers</span></div>
+                <div class="flex items-center p-2.5 bg-gray-50 border border-gray-300 rounded shadow-sm"><i class="fa-solid fa-calculator text-amber-600 mr-3 text-sm w-5 text-center"></i> <span>Mila Own</span></div>
+            </div>
+            <div class="space-y-3">
+                <h3 class="text-sm font-bold text-slate-800 border-b pb-1 mb-2">Telecom & Data</h3>
+                <div class="flex items-center p-2.5 bg-gray-50 border border-gray-300 rounded shadow-sm"><i class="fa-solid fa-charging-station text-gray-700 mr-3 text-sm w-5 text-center"></i> <span>Power Mannons</span></div>
+                <div class="flex items-center p-2.5 bg-gray-50 border border-gray-300 rounded shadow-sm"><i class="fa-solid fa-sliders text-green-600 mr-3 text-sm w-5 text-center"></i> <span>Power / Harmonics Analysst</span></div>
+            </div>
+            <div class="space-y-3">
+                <h3 class="text-sm font-bold text-slate-800 border-b pb-1 mb-2">Process Control</h3>
+                <div class="flex items-center p-2.5 bg-gray-50 border border-gray-300 rounded shadow-sm"><i class="fa-solid fa-plug text-gray-700 mr-3 text-sm w-5 text-center"></i> <span>Power Meters</span></div>
+                <div class="flex items-center p-2.5 bg-gray-50 border border-gray-300 rounded shadow-sm"><i class="fa-solid fa-gauge-high text-blue-600 mr-3 text-sm w-5 text-center"></i> <span>Power Supplies</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 📋 6. EXACT SEO KEYWORD DIRECTORY FOOTER -->
+<div class="w-full px-6 mt-4">
+    <div class="bg-white border border-gray-300 rounded p-4 text-[10px] text-gray-700 grid grid-cols-2 md:grid-cols-6 gap-4 leading-relaxed shadow-sm font-medium">
+        <div><p>Measuring Instruments</p><p>Digital Multi Meters</p><p>Digital Clamp Meters</p><p>Laboratory Mesters</p><p>Leakage Meters</p><p>Transducers</p><p>Lux Meters</p><p>Optical Laser Source</p><p>Trainer Kit</p></div>
+        <div><p>Power Clamp Meters</p><p>Power Meters</p><p>Maximum Demand Controllers</p><p>Power/Harmonics Analyser</p><p>Automatic Power Factor Regulator</p><p>Transducavevoes</p><p>Banking Reletervs</p><p>Optical Attenuator</p><p>Soldling Sliding</p></div>
+        <div><p>Thermo Hygrometers</p><p>Thermo Anemometers</p><p>Tachemeter / Strobobopees</p><p>Laser Diameter Meter</p><p>Sound Level Meters</p><p>Programmable Panel Meter</p><p>Vehicle Tracking System</p><p>Patch Card</p><p>Signal Generator</p></div>
+        <div><p>Earth Resistance Testers</p><p>Earth Clamp Meters</p><p>ELCB Testers</p><p>Infrared Thermometer</p><p>Gas Analysers</p><p>Physing Asvers</p><p>Signal Instrumters</p><p>Thermal Imager</p><p>Conductivity Meter</p></div>
+        <div><p>Insulation Resistance Festors</p><p>Milli Ohm Meter</p><p>Power Supplies</p><p>Oscilloscopes</p><p>Calibrator</p><p>Country Counting Machines</p><p>L-C-R-Meters</p><p>Motor Chacker</p><p>Vector Netwer Analyzer</p></div>
+        <div><p>Site Master</p><p>RF Power Meter</p><p>VSWR Meter</p><p>Duming Load</p><p>Duming Machine</p><p>OTER</p><p>Optical Power Meter</p><p>GPS</p><p>ProOBRITOS Meter</p></div>
+    </div>
+</div>
+
+<!-- 🎡 7. BRAND LOGO MARQUEE SLIDER WITH VECTOR SYMBOLS -->
+<div class="w-full px-6 mt-4 overflow-hidden bg-[#fafafa] py-4 border-y border-gray-300 relative shadow-inner">
+    <div class="animate-marquee-loop items-center space-x-16">
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><svg class="w-6 h-6 text-blue-800" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 22h20L12 2zm0 4l6.5 13h-13L12 6z"/></svg><span class="text-blue-900 font-black tracking-tighter text-[13px]">बीएचईएल / BHEL</span></div>
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><div class="w-6 h-6 bg-red-600 rounded-sm flex items-center justify-center text-white text-[9px] font-bold">SM</div><span class="text-slate-800 font-extrabold text-[11px] tracking-tight">SM CREATIVE</span></div>
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><svg class="w-6 h-6 text-orange-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M6 12h12"/></svg><span class="text-slate-900 font-black text-[12px]">FOCUS</span></div>
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><div class="w-6 h-6 rounded-full bg-gradient-to-tr from-blue-700 to-red-600 flex items-center justify-center text-white text-[8px] font-bold">हाएलि</div><span class="text-blue-800 font-black tracking-tight text-[12px]">HAL</span></div>
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><svg class="w-6 h-6 text-green-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/></svg><span class="text-green-700 font-black text-[12px]">AMKA</span></div>
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><div class="w-5 h-5 rounded-full bg-cyan-500 flex items-center justify-center text-white"><i class="fa-solid fa-circle-nodes text-[10px]"></i></div><span class="text-cyan-600 font-black text-[13px]">NU TEK</span></div>
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><div class="w-6 h-6 bg-blue-950 flex flex-col items-center justify-center text-amber-400 rounded-sm"><i class="fa-solid fa-crown text-[8px]"></i></div><span class="text-blue-950 font-black text-[12px]">NV GROUP</span></div>
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><i class="fa-solid fa-rotate text-red-600 text-lg"></i><span class="text-blue-900 font-black text-[13px]">ZEPHYR</span></div>
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><i class="fa-solid fa-tower-cell text-sky-600 text-lg"></i><span class="text-sky-800 font-extrabold text-[11px]">BNN</span></div>
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><i class="fa-solid fa-clover text-emerald-600 text-lg"></i><span class="text-emerald-700 font-black text-[12px]">RELIGĀRE</span></div>
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><i class="fa-solid fa-forward-fast text-slate-800"></i><span class="text-slate-900 font-black text-[13px] italic">inTarvo</span></div>
+        <div class="flex items-center space-x-2 bg-white px-4 py-1.5 border rounded-md shadow-sm"><div class="w-5 h-5 rounded-full border-2 border-orange-500 flex items-center justify-center"><div class="w-2 h-2 bg-orange-500 rounded-full"></div></div><span class="text-orange-600 font-extrabold text-[12px]">ceracon</span></div>
+    </div>
+</div>
+
+<!-- 8. BOTTOM FOOTER WITH COUNTER -->
+<footer class="w-full bg-[#1c2833] text-gray-400 text-center py-6 text-[11px] border-t border-gray-800">
+    <div class="flex flex-col md:flex-row justify-between items-center px-6">
+        <p>© 2012-2026 Signal Hawk Electronics (P) Ltd. | Promoted by GlobalAd24x7</p>
+        <div class="flex items-center space-x-2"><span>Your No is:</span><span class="bg-black text-green-400 font-mono px-2 py-0.5 rounded border border-gray-700">000397</span></div>
+
+    </div>
+</footer>
+
+<!-- =========================================================================
+     🛠️ JAVASCRIPT SYSTEM ENGINE (FIXED WRAPPER CONDITIONAL ROUTING)
+     ========================================================================= -->
+<script >
+
+    function updateLiveClock() {
+        const now = new Date();
+        const timeString = now.toLocaleTimeString('en-US', {
+            hour12: true,
+            hour: '2-digit',
+            minute:'2-digit',
+            second:'2-digit'
+        });
+
+
+        document.getElementById('liveClock').innerText = '⏰ ' + timeString;
+    }
+
+
+    setInterval(updateLiveClock, 1000);
+    updateLiveClock();
+    function showPage(pageId) {
+
+        document.getElementById('homeView').style.display = 'none';
+        document.getElementById('overviewView').style.display = 'none';
+        document.getElementById('marketView').style.display = 'none';
+        document.getElementById('structureView').style.display = 'none';
+        document.getElementById('servicesView').style.display = 'none';
+        document.getElementById('enquiryView').style.display = 'none';
+
+        // अब पेज के हिसाब से टाइटल और कंटेंट अपडेट करें
+        if(pageId === 'overview') {
+            document.getElementById('overviewView').style.display = 'block';
+            document.title = "Company Overview | Signal Hawk Electronics";
+        } else if(pageId === 'market') {
+            document.getElementById('marketView').style.display = 'block';
+            document.title = "Market Segments | Signal Hawk Electronics";
+        } else if(pageId === 'structure') {
+            document.getElementById('structureView').style.display = 'block';
+            document.title = "Organizational Structure | Signal Hawk Electronics";
+        } else if(pageId === 'services') {
+            document.getElementById('servicesView').style.display = 'block';
+            document.title = "Our Services | Signal Hawk Electronics";
+        } else if(pageId === 'enquiry') {
+            document.getElementById('enquiryView').style.display = 'block';
+            document.title = "Send Enquiry | Signal Hawk Electronics";
+        } else {
+            document.getElementById('homeView').style.display = 'block';
+            document.title = "Signal Hawk: Test & Measurement Instruments India";
+        }
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+    // 🎡 Main Carousel Engine Controls
+    let currentSlide = 0;
+    const mainSlides = document.querySelectorAll('.slide-element');
+    let sliderTimer = null;
+
+    function showSlide(index) {
+        mainSlides.forEach((slide, i) => {
+            if (i === index) {
+                slide.style.opacity = '1';
+                slide.style.pointerEvents = 'auto';
+            } else {
+                slide.style.opacity = '0';
+                slide.style.pointerEvents = 'none';
+            }
+        });
+    }
+
+    function moveSlide(step) {
+        currentSlide = (currentSlide + step + mainSlides.length) % mainSlides.length;
+        showSlide(currentSlide);
+    }
+
+    function manualMoveSlide(step) {
+        clearInterval(sliderTimer);
+        moveSlide(step);
+        startAutoSlider();
+    }
+
+    function startAutoSlider() {
+        sliderTimer = setInterval(() => { moveSlide(1); }, 3500);
+    }
+
+    if (mainSlides.length > 0) {
+        showSlide(currentSlide);
+        startAutoSlider();
+    }
+
+    // 🔄 New Products Slider System
+    let currentGroupIndex = 0;
+    const dbSlides = document.querySelectorAll('.db-product-slide');
+
+    function rotateDbProducts() {
+        if (dbSlides.length === 0) return;
+        const totalItems = dbSlides.length;
+        const firstIndex = currentGroupIndex % totalItems;
+        const secondIndex = (currentGroupIndex + 1) % totalItems;
+
+        dbSlides.forEach((slide, i) => {
+            if (i === firstIndex || i === secondIndex) {
+                slide.style.display = 'flex';
+                slide.style.opacity = '1';
+                slide.style.transform = 'translateY(0px)';
+                slide.style.position = 'relative';
+            } else {
+                slide.style.display = 'none';
+                slide.style.opacity = '0';
+                slide.style.position = 'absolute';
+            }
+        });
+        currentGroupIndex = (currentGroupIndex + 2) % totalItems;
+    }
+
+    if (dbSlides.length > 0) {
+        rotateDbProducts();
+        setInterval(rotateDbProducts, 4000);
+    }
+
+</script>
+</body>
+</html>
